@@ -1,0 +1,21 @@
+{
+  "name": "eventemitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify index.js -o bundle.js",
+    "watch-js": "watchify index.js -o bundle.js -dv",
+    "serve": "npm run watch-js & npm run lite",
+    "start": "npm run build-js & npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings":"^0.8.1"
+  }
+}
